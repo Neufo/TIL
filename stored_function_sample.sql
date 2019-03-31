@@ -1,4 +1,8 @@
 
+-- 副問い合わせをストアドプロシージャの呼び出しに置き換えるサンプル
+-- [before] SELECT * FROM SALES_RESULTS WHERE AMOUNT >= SELECT AVG(AMOUNT) FROM SALES_RESULTS;
+-- [after ] SELECT * FROM SALES_RESULTS WHERE AMOUNT >= AVERAGE_AMOUNT();
+
 -- サンプル用のテーブル (売り上げ実績)
 CREATE TABLE SALES_RESULTS(
     NAME VARCHAR(10), -- 会社名
