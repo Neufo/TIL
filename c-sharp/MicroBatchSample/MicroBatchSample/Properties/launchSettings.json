@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MicroBatchSample": {
+      "commandName": "Project",
+      "commandLineArgs": " -name \"foo\" -repeat 5"
+    }
+  }
+}
